@@ -4,7 +4,6 @@ import random
 
 # main method with arguments
 def main(argv):
-    # track heads and tails
     heads = 0
     tails = 0
     # get first argument as integer
@@ -17,10 +16,8 @@ def main(argv):
     for i in range(counter):
         # flip coin
         coin = random_boolean()
-        # if heads
         if coin:
             heads += 1
-        # if tails
         else:
             tails += 1
     # calculate elapsed time
