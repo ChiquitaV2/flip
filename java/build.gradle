@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'app.quoter'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+application {
+    mainClass = 'me.chiquita.java.Main'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'me.chiquita.java.Main'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
