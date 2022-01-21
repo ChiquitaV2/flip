@@ -12,10 +12,16 @@ const main = async () => {
         tails++
       }
     }
+
+    // end of stopwatch
     console.timeEnd("elapsed");
+
+    // print raw results
     console.log("heads: " + heads)
     console.log("tails: " + tails);
     console.log("flips: " + amount);
+
+    // print ratios
     console.log("heads ratio: " + (heads / amount));
     console.log("tails ratio: " + (tails / amount));
 }

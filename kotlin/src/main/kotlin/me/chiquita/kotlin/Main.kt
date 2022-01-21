@@ -22,10 +22,14 @@ fun main(args: Array<String>) {
         }
     }
     val end = System.currentTimeMillis()
+
+    // Print results
     println("elapsed: ${end-start}ms")
     println("heads: $heads")
     println("tails: $tails")
     println("flips: $count")
+
+    // Calculate ratio
     println("heads ratio: ${heads.toFloat()/count}")
     println("tails ratio: ${tails.toFloat()/count}")
 }

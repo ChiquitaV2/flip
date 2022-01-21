@@ -27,11 +27,13 @@ fn main() {
     let end = std::time::Instant::now();
     // calculate elapsed time
     let elapsed = end.duration_since(start);
-    // print results
+    // print raw results
     println!("elapsed: {}ms", elapsed.as_millis());
     println!("heads: {}", heads);
     println!("tails: {}", tails);
     println!("flips: {}", count);
+
+    // calculate ratio
     println!("heads ratio: {}", heads as f64 / count as f64);
     println!("tails ratio: {}", tails as f64 / count as f64);
 }

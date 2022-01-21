@@ -35,10 +35,13 @@ func main() {
 
 	elapsed := time.Since(start)
 
+    // print raw results
     fmt.Printf("elapsed: %vms\n", elapsed.Milliseconds())
     fmt.Printf("heads: %d\n", heads)
     fmt.Printf("tails: %d\n", tails)
     fmt.Printf("flips: %d\n", flips)
+
+    // print ratio
     fmt.Printf("heads ratio: %f\n", float64(heads)/float64(flips))
     fmt.Printf("tails ratio: %f\n", float64(tails)/float64(flips))
 
